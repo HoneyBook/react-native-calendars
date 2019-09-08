@@ -410,7 +410,7 @@ export default class AgendaView extends Component {
                 if (this.props.isDefaultViewCalendar) {
                   this.calendar.scrollToDay(this.state.selectedDay.clone().setDate(1), 0, false);
                 } else {
-                  // this.calendar.scrollToDay(this.state.selectedDay.clone(), this.calendarOffset(), false);
+                  this.calendar.scrollToDay(this.state.selectedDay.clone(), this.calendarOffset(), false);
                 }
                 // this.calendar.scrollToDay(this.state.selectedDay.clone(), this.calendarOffset(), false);
               }}
